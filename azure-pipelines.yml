@@ -1,4 +1,8 @@
 # Node.js with Angular
+- task: Docker@2
+  inputs:
+    command: 'buildAndPush'
+    Dockerfile: '**/Dockerfile'
 - task: DotNetCoreCLI@2
   inputs:
     command: 'build'
